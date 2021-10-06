@@ -34,7 +34,7 @@ namespace FibonacciEvenSum
                 }               
             }
             Console.WriteLine();
-            Console.Write("Sum of the evennumbers in this sequence is: ");
+            Console.Write("Sum of the even numbers in this sequence is: ");
             Console.WriteLine(evens.Sum());
         }
     }
