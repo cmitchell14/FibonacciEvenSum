@@ -34,8 +34,34 @@ namespace FibonacciEvenSum
                 }               
             }
             Console.WriteLine();
-            Console.Write("Sum of the even numbers in this sequence is: ");
-            Console.WriteLine(evens.Sum());
+            Console.Write($"Sum of the even numbers in this sequence is: {evens.Sum()}");
+
+            Console.WriteLine();
+            //SOLUTION 2 ----------------------
+            //one variable fibonacci sequence.
+            //int j = 0;
+            //for (int i = 0; i < 4000000; i+=j)
+            //{
+            //    Console.WriteLine(i);
+            //    j = i - j;
+            //}
+
+            Console.WriteLine();
+            //Adding evens together without list.
+            int j = 0;
+            int sum = 0;
+
+            for (int i = 1; i < 4000000; i += j)
+            {
+                Console.WriteLine(i);
+                if (i % 2 == 0)
+                {
+                    sum += i;
+                }
+                j = i - j;
+            }
+            Console.WriteLine($"The sum of all even values is  {sum}"); //4,613,732
+
         }
     }
 }
